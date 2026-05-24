@@ -1,0 +1,10 @@
+^dev$
+^app\.R$
+^rsconnect$
+^\.rscignore$
+^R/_disable_autoload\.R$
+^cyclestatsv2\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^\.positai$
+^\.claude$

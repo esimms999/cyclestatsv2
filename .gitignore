@@ -1,0 +1,12 @@
+# R session artifacts
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# R CMD check output
+*.Rcheck/
+
+# Built package files
+*.tar.gz
+*.tgz
