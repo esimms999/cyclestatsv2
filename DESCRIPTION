@@ -33,3 +33,4 @@ Config/testthat/edition: 3
 Config/golem_name: cyclestatsv2
 Config/golem_version_dev: 0.0.0.9000
 Language: en-US
+URL: https://esimms999.github.io/cyclestatsv2/
