@@ -1,6 +1,6 @@
 Package: cyclestatsv2
 Title: Analysis of Cycling Rides
-Version: 0.0.0.9000
+Version: 2.00
 Authors@R: 
     person("E.", "Simms", , "esimms@yahoo.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0009-1780-7533"))
@@ -31,6 +31,6 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Config/golem_name: cyclestatsv2
-Config/golem_version_dev: 0.0.0.9000
+Config/golem_version_dev: 2.00
 Language: en-US
 URL: https://esimms999.github.io/cyclestatsv2/
