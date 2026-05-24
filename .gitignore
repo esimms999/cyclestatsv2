@@ -10,3 +10,5 @@
 # Built package files
 *.tar.gz
 *.tgz
+.positai
+docs
