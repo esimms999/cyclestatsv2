@@ -29,7 +29,6 @@ cyclestats_init <- function() {
     col_select = c(1:7, 17),
     name_repair = "minimal"
   ) |>
-
     dplyr::rename(
       "activity_id"          = "Activity ID",
       "activity_datetime"    = "Activity Date",
@@ -38,34 +37,35 @@ cyclestats_init <- function() {
       "activity_distance"    = "Distance",
       "activity_moving_time" = "Moving Time"
     ) |>
-
     dplyr::filter(activity_type == "Ride") |>
-    dplyr::select(activity_id, activity_datetime, activity_name,
-                  activity_distance, activity_moving_time) |>
-
+    dplyr::select(
+      activity_id, activity_datetime, activity_name,
+      activity_distance, activity_moving_time
+    ) |>
     # Strava exports descending; sort ascending by ID.
     dplyr::arrange(activity_id) |>
-
     # Fix a known data error
     dplyr::mutate(
       activity_moving_time = ifelse(activity_id == "2949643229", 3271, activity_moving_time)
     ) |>
-
     dplyr::mutate(
-      activity_id         = as.character(activity_id),
-      activity_date       = format(as.Date(lubridate::mdy(
-                              stringr::str_sub(activity_datetime, 1L, 12L)), "%Y-%m-%d")),
-      activity_year       = format(as.Date(activity_date), "%Y"),
-      activity_month      = format(as.Date(activity_date), "%m"),
+      activity_id = as.character(activity_id),
+      activity_date = format(
+        as.Date(lubridate::mdy(stringr::str_sub(activity_datetime, 1L, 12L))),
+        "%Y-%m-%d"
+      ),
+      activity_year = format(as.Date(activity_date), "%Y"),
+      activity_month = format(as.Date(activity_date), "%m"),
       activity_year_month = format(as.Date(activity_date), "%Y-%m"),
       # Convert km to miles
-      activity_distance   = round(activity_distance * 0.6214, digits = 2),
-      activity_avg_speed  = round(activity_distance / (activity_moving_time / 3600), digits = 2)
+      activity_distance = round(activity_distance * 0.6214, digits = 2),
+      activity_avg_speed = round(activity_distance / (activity_moving_time / 3600), digits = 2)
     ) |>
-
-    dplyr::select(activity_id, activity_name, activity_datetime, activity_date,
-                  activity_year, activity_month, activity_year_month,
-                  activity_distance, activity_avg_speed)
+    dplyr::select(
+      activity_id, activity_name, activity_datetime, activity_date,
+      activity_year, activity_month, activity_year_month,
+      activity_distance, activity_avg_speed
+    )
 
   .cyclestats_data$available_years <- as.list(unique(.cyclestats_data$activities$activity_year))
 
@@ -77,7 +77,7 @@ cyclestats_init <- function() {
     for (month in 1:12) {
       year_month <- paste(year, formatC(month, width = 2, flag = 0), sep = "-")
       activity_year_month <- append(activity_year_month, year_month)
-      activity_year       <- append(activity_year, year)
+      activity_year <- append(activity_year, year)
     }
   }
 

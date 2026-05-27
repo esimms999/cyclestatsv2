@@ -6,7 +6,6 @@
 #' @importFrom DT renderDT
 #' @rawNamespace import(plotly, except = last_plot)
 app_server <- function(input, output, session) {
-
   number_of_rides <- reactive({
     as.character(dplyr::count(activities_selected()))
   })
