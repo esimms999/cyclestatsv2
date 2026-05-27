@@ -5,21 +5,21 @@
 \title{Run the cyclestatsv2 Shiny Application}
 \usage{
 run_app(
-  onStart = NULL,
+  on_start = NULL,
   options = list(),
-  enableBookmarking = NULL,
-  uiPattern = "/",
+  enable_bookmarking = NULL,
+  ui_pattern = "/",
   ...
 )
 }
 \arguments{
-\item{onStart}{Passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
+\item{on_start}{Passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
 
 \item{options}{Named list of options passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
 
-\item{enableBookmarking}{Passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
+\item{enable_bookmarking}{Passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
 
-\item{uiPattern}{Passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
+\item{ui_pattern}{Passed to \code{\link[shiny:shinyApp]{shiny::shinyApp()}}.}
 
 \item{...}{Additional arguments passed as golem options.}
 }
