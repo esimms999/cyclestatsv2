@@ -1,0 +1,9 @@
+.git
+.github
+.Rproj.user
+.positai
+*.Rcheck
+*.tar.gz
+docs
+dev
+rsconnect
