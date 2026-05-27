@@ -73,7 +73,8 @@ app_server <- function(input, output, session) {
   output$about_text <- renderUI({
     HTML(markdown::markdownToHTML(
       app_sys("app/www/about.md"),
-      fragment.only = TRUE
+      fragment.only = TRUE,
+      options = "-embed_resources"
     ))
   })
 
