@@ -6,7 +6,6 @@
 #' @importFrom DT renderDT
 #' @rawNamespace import(plotly, except = last_plot)
 app_server <- function(input, output, session) {
-
   number_of_rides <- reactive({
     as.character(dplyr::count(activities_selected()))
   })
@@ -73,7 +72,8 @@ app_server <- function(input, output, session) {
   output$about_text <- renderUI({
     HTML(markdown::markdownToHTML(
       app_sys("app/www/about.md"),
-      fragment.only = TRUE
+      fragment.only = TRUE,
+      options = "-embed_resources"
     ))
   })
 

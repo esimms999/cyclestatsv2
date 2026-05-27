@@ -16,13 +16,11 @@ app_ui <- function(request) {
     page_sidebar(
       title = "Cycling Analysis",
       bg = "lightblue",
-
       sidebar = checkboxGroupInput(
         inputId = "selected_years",
         label = "Selected Year(s):",
         choices = .cyclestats_data$available_years
       ),
-
       layout_columns(
         fill = FALSE,
         value_box(
@@ -36,7 +34,6 @@ app_ui <- function(request) {
           showcase = bsicons::bs_icon("speedometer2")
         )
       ),
-
       navset_card_pill(
         id = "tab_being_displayed",
         nav_panel("Graph", plotly::plotlyOutput("miles_graph", width = "auto", height = "auto")),

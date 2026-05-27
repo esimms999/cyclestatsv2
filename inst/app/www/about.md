@@ -10,5 +10,5 @@
 
  ![](www/cyclestats_QR.png)
 
- V2.00
+ V2.0.0
 
