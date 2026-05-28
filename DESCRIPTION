@@ -30,6 +30,7 @@ Suggests:
     rmarkdown,
     styler,
     testthat (>= 3.0.0)
+VignetteBuilder: knitr
 Config/testthat/edition: 3
 Config/golem_name: cyclestatsv2
 Config/golem_version_dev: 2.00
