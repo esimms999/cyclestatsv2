@@ -6,17 +6,17 @@ Main entry point. Initialises data then launches the app.
 
 ``` r
 run_app(
-  onStart = NULL,
+  on_start = NULL,
   options = list(),
-  enableBookmarking = NULL,
-  uiPattern = "/",
+  enable_bookmarking = NULL,
+  ui_pattern = "/",
   ...
 )
 ```
 
 ## Arguments
 
-- onStart:
+- on_start:
 
   Passed to
   [`shiny::shinyApp()`](https://rdrr.io/pkg/shiny/man/shinyApp.html).
@@ -26,12 +26,12 @@ run_app(
   Named list of options passed to
   [`shiny::shinyApp()`](https://rdrr.io/pkg/shiny/man/shinyApp.html).
 
-- enableBookmarking:
+- enable_bookmarking:
 
   Passed to
   [`shiny::shinyApp()`](https://rdrr.io/pkg/shiny/man/shinyApp.html).
 
-- uiPattern:
+- ui_pattern:
 
   Passed to
   [`shiny::shinyApp()`](https://rdrr.io/pkg/shiny/man/shinyApp.html).
