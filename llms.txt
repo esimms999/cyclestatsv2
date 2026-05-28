@@ -28,12 +28,31 @@ The app has a sidebar layout with a year filter and three main tabs:
 
 ## Installation
 
-Clone the repository and install dependencies:
+Clone the repository and open `cyclestatsv2.Rproj` in RStudio. Then
+install `devtools` if needed and install all package dependencies:
 
 ``` r
 
-remotes::install_deps()
+install.packages("devtools")   # skip if already installed
+devtools::install_dev_deps()
 ```
+
+`install_dev_deps()` installs everything listed under `Imports`,
+`Suggests`, and build-time tools (e.g. `roxygen2`, `testthat`, `lintr`).
+It is safe to re-run if you are unsure what is already installed.
+
+After dependencies are in place, build and install the package via
+**Build → Install** in RStudio, or:
+
+``` r
+
+devtools::install()
+```
+
+See the [Development
+Setup](https://esimms999.github.io/cyclestatsv2/articles/development_setup.html)
+article for the full workflow including data file setup and common dev
+tasks.
 
 ## Running the App
 
@@ -103,3 +122,9 @@ MIT
 - [`run_app()`](https://esimms999.github.io/cyclestatsv2/reference/run_app.md)
   : Run the cyclestatsv2 Shiny Application
 
+# Articles
+
+### All vignettes
+
+- [Development
+  Setup](https://esimms999.github.io/cyclestatsv2/articles/development_setup.md):
