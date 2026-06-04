@@ -24,7 +24,7 @@ utils::globalVariables(c(
 #' @importFrom readr read_csv
 cyclestats_init <- function() {
   .cyclestats_data$activities <- readr::read_csv(
-    system.file("extdata/activities.csv", package = "cyclestatsv2"),
+    app_sys("extdata/activities.csv"),
     show_col_types = FALSE,
     col_select = c(1:7, 17),
     name_repair = "minimal"
@@ -42,8 +42,6 @@ cyclestats_init <- function() {
       activity_id, activity_datetime, activity_name,
       activity_distance, activity_moving_time
     ) |>
-    # Strava exports descending; sort ascending by ID.
-    dplyr::arrange(activity_id) |>
     # Fix a known data error
     dplyr::mutate(
       activity_moving_time = ifelse(activity_id == "2949643229", 3271, activity_moving_time)
@@ -61,6 +59,9 @@ cyclestats_init <- function() {
       activity_distance = round(activity_distance * 0.6214, digits = 2),
       activity_avg_speed = round(activity_distance / (activity_moving_time / 3600), digits = 2)
     ) |>
+    # I was sorting by activity_id, which was a problem when I needed to add a corrected activity.
+    # Now sorting by activity_date.
+    dplyr::arrange(activity_date) |>
     dplyr::select(
       activity_id, activity_name, activity_datetime, activity_date,
       activity_year, activity_month, activity_year_month,
