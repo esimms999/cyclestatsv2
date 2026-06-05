@@ -32,6 +32,11 @@ app_ui <- function(request) {
           title = "Miles",
           value = textOutput("number_of_miles"),
           showcase = bsicons::bs_icon("speedometer2")
+        ),
+        value_box(
+          title = "Avg Speed",
+          value = textOutput("avg_speed"),
+          showcase = bsicons::bs_icon("speedometer")
         )
       ),
       navset_card_pill(

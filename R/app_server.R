@@ -11,7 +11,14 @@ app_server <- function(input, output, session) {
   })
 
   number_of_miles <- reactive({
-    as.character(sum(activities_selected()$activity_distance))
+    format(round(sum(activities_selected()$activity_distance), 1), nsmall = 1)
+  })
+
+  avg_speed <- reactive({
+    if (nrow(activities_selected()) == 0) {
+      return("0.0")
+    }
+    format(round(mean(activities_selected()$activity_avg_speed), 1), nsmall = 1)
   })
 
   activities_selected <- reactive({
@@ -67,7 +74,20 @@ app_server <- function(input, output, session) {
   })
 
   output$miles_graph <- plotly::renderPlotly(gg_plot())
-  output$miles_table <- DT::renderDT(activities_selected())
+  output$miles_table <- DT::renderDT(
+    activities_selected() |>
+      dplyr::select(activity_date, activity_name, activity_distance, activity_avg_speed) |>
+      dplyr::mutate(
+        activity_distance = round(activity_distance, 1),
+        activity_avg_speed = round(activity_avg_speed, 1)
+      ) |>
+      dplyr::rename(
+        "Date"      = activity_date,
+        "Name"      = activity_name,
+        "Miles"     = activity_distance,
+        "Avg Speed" = activity_avg_speed
+      )
+  )
 
   output$about_text <- renderUI({
     HTML(markdown::markdownToHTML(
@@ -79,4 +99,5 @@ app_server <- function(input, output, session) {
 
   output$number_of_rides <- renderText(number_of_rides())
   output$number_of_miles <- renderText(number_of_miles())
+  output$avg_speed <- renderText(avg_speed())
 }
