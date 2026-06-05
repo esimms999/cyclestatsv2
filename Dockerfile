@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.5.2
+FROM rocker/r-ver:4.6.0
 
 # System libraries required by R package dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
