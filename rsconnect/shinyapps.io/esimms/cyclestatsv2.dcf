@@ -5,7 +5,7 @@ account: esimms
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17412452
-bundleId: 12092078
+bundleId: 12175187
 url: https://esimms.shinyapps.io/cyclestatsv2/
 version: 2.0.0
 asMultiple: FALSE
