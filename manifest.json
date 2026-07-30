@@ -1360,26 +1360,32 @@
         "Type": "Package",
         "Package": "gert",
         "Title": "Simple Git Client for R",
-        "Version": "2.3.1",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Jennifer\", \"Bryan\", role = \"ctb\", email = \"jenny@posit.co\",\n      comment = c(ORCID = \"0000-0002-6983-2759\")))",
+        "Version": "2.4.0",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Maëlle\", \"Salmon\", role = \"aut\", comment = c(ORCID = \"0000-0002-2815-0399\")),\n    person(\"Jennifer\", \"Bryan\", role = \"ctb\", email = \"jenny@posit.co\",\n      comment = c(ORCID = \"0000-0002-6983-2759\")))",
         "Description": "Simple git client for R based on 'libgit2' <https://libgit2.org> with\n    support for SSH and HTTPS remotes. All functions in 'gert' use basic R data \n    types (such as vectors and data-frames) for their arguments and return values.\n    User credentials are shared with command line 'git' through the git-credential\n    store and ssh keys stored on disk or ssh-agent.",
         "License": "MIT + file LICENSE",
         "URL": "https://docs.ropensci.org/gert/,\nhttps://ropensci.r-universe.dev/gert",
         "BugReports": "https://github.com/r-lib/gert/issues",
         "Imports": "askpass, credentials (>= 1.2.1), openssl (>= 2.0.3),\nrstudioapi (>= 0.11), sys, zip (>= 2.1.0)",
-        "Suggests": "spelling, knitr, rmarkdown, testthat",
+        "Suggests": "spelling, knitr, rmarkdown, testthat (>= 3.0.0), roxygen2",
         "VignetteBuilder": "knitr",
         "Encoding": "UTF-8",
-        "RoxygenNote": "7.3.3",
         "SystemRequirements": "libgit2 (>= 1.0): libgit2-devel (rpm) or\nlibgit2-dev (deb)",
         "Language": "en-US",
+        "Config/roxygen2/version": "8.0.0",
+        "Config/testthat/edition": "3",
         "NeedsCompilation": "yes",
-        "Packaged": "2026-01-11 11:37:47 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>),\n  Jennifer Bryan [ctb] (ORCID: <https://orcid.org/0000-0002-6983-2759>)",
+        "Packaged": "2026-07-22 09:03:39 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>),\n  Maëlle Salmon [aut] (ORCID: <https://orcid.org/0000-0002-2815-0399>),\n  Jennifer Bryan [ctb] (ORCID: <https://orcid.org/0000-0002-6983-2759>)",
         "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
         "Repository": "RSPM",
-        "Date/Publication": "2026-01-11 23:50:02 UTC",
-        "Built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:41:34 UTC; unix"
+        "Date/Publication": "2026-07-22 09:40:02 UTC",
+        "Built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-23 16:00:59 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "gert",
+        "RemoteRef": "gert",
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "2.4.0"
       }
     },
     "ggplot2": {
@@ -2411,7 +2417,7 @@
       "description": {
         "Package": "pak",
         "Title": "Another Approach to Package Installation",
-        "Version": "0.11.0",
+        "Version": "0.11.1",
         "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Jim\", \"Hester\", role = \"aut\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"),\n           comment = c(ROR = \"03wc8by49\")),\n    person(\"Winston\", \"Chang\", role = \"ctb\",\n           comment = \"R6, callr, processx\"),\n    person(\"Ascent Digital Services\", role = c(\"cph\", \"fnd\"),\n           comment = \"callr, processx\"),\n    person(\"Hadley\", \"Wickham\", role = c(\"ctb\", \"cph\"),\n           comment = \"cli, curl, pkgbuild, yaml\"),\n    person(\"Jeroen\", \"Ooms\", role = \"ctb\",\n           comment = \"curl, jsonlite\"),\n    person(\"Maëlle\", \"Salmon\", role = \"ctb\",\n           comment = \"desc, pkgsearch\"),\n    person(\"Duncan\", \"Temple Lang\", role = \"ctb\",\n           comment = \"jsonlite\"),\n    person(\"Lloyd\", \"Hilaiel\", role = \"cph\",\n           comment = \"jsonlite\"),\n    person(\"Alec\", \"Wong\", role = \"ctb\",\n           comment = \"keyring\"),\n    person(\"Michel Berkelaar and lpSolve authors\", role = \"ctb\",\n           comment = \"lpSolve\"),\n    person(\"R Consortium\", role = \"fnd\",\n           comment = \"pkgsearch\"),\n    person(\"Jay\", \"Loden\", role = \"ctb\",\n           comment = \"ps\"),\n    person(\"Dave\", \"Daeschler\", role = \"ctb\",\n           comment = \"ps\"),\n    person(\"Giampaolo\", \"Rodola\", role = \"ctb\",\n           comment = \"ps\"),\n    person(\"Shawn\", \"Garbett\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Jeremy\", \"Stephens\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Kirill\", \"Simonov\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Yihui\", \"Xie\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Zhuoer\", \"Dong\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Jeffrey\", \"Horner\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Will\", \"Beasley\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Brendan\", \"O'Connor\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Gregory\", \"Warnes\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Michael\", \"Quinn\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Zhian\", \"Kamvar\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Charlie\", \"Gao\", role = \"ctb\",\n           comment = \"yaml\"),\n    person(\"Kuba\", \"Podgórski\", role = \"ctb\",\n           comment = \"zip\"),\n    person(\"Rich\", \"Geldreich\", role = \"ctb\",\n           comment = \"zip\")\n  )",
         "Description": "The goal of 'pak' is to make package installation faster and\n    more reliable. In particular, it performs all HTTP operations in\n    parallel, so metadata resolution and package downloads are fast.\n    Metadata and package files are cached on the local disk as well. 'pak'\n    has a dependency solver, so it finds version conflicts before\n    performing the installation. This version of 'pak' supports CRAN,\n    'Bioconductor' and 'GitHub' packages as well.",
         "License": "GPL-3",
@@ -2432,17 +2438,17 @@
         "Encoding": "UTF-8",
         "Config/roxygen2/version": "8.0.0",
         "NeedsCompilation": "yes",
-        "Packaged": "2026-07-15 15:30:58 UTC; gaborcsardi",
+        "Packaged": "2026-07-22 14:04:53 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre],\n  Jim Hester [aut],\n  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>),\n  Winston Chang [ctb] (R6, callr, processx),\n  Ascent Digital Services [cph, fnd] (callr, processx),\n  Hadley Wickham [ctb, cph] (cli, curl, pkgbuild, yaml),\n  Jeroen Ooms [ctb] (curl, jsonlite),\n  Maëlle Salmon [ctb] (desc, pkgsearch),\n  Duncan Temple Lang [ctb] (jsonlite),\n  Lloyd Hilaiel [cph] (jsonlite),\n  Alec Wong [ctb] (keyring),\n  Michel Berkelaar and lpSolve authors [ctb] (lpSolve),\n  R Consortium [fnd] (pkgsearch),\n  Jay Loden [ctb] (ps),\n  Dave Daeschler [ctb] (ps),\n  Giampaolo Rodola [ctb] (ps),\n  Shawn Garbett [ctb] (yaml),\n  Jeremy Stephens [ctb] (yaml),\n  Kirill Simonov [ctb] (yaml),\n  Yihui Xie [ctb] (yaml),\n  Zhuoer Dong [ctb] (yaml),\n  Jeffrey Horner [ctb] (yaml),\n  Will Beasley [ctb] (yaml),\n  Brendan O'Connor [ctb] (yaml),\n  Gregory Warnes [ctb] (yaml),\n  Michael Quinn [ctb] (yaml),\n  Zhian Kamvar [ctb] (yaml),\n  Charlie Gao [ctb] (yaml),\n  Kuba Podgórski [ctb] (zip),\n  Rich Geldreich [ctb] (zip)",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
-        "Date/Publication": "2026-07-15 17:30:02 UTC",
-        "Built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-16 05:10:18 UTC; unix",
+        "Date/Publication": "2026-07-22 15:50:07 UTC",
+        "Built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-23 16:10:20 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "pak",
         "RemoteRef": "pak",
         "RemoteRepos": "https://p3m.dev/cran/latest",
-        "RemoteSha.Version": "0.11.0"
+        "RemoteSha.Version": "0.11.1"
       }
     },
     "pillar": {
@@ -2601,32 +2607,31 @@
       "description": {
         "Package": "plotly",
         "Title": "Create Interactive Web Graphics via 'plotly.js'",
-        "Version": "4.12.0",
+        "Version": "4.12.1",
         "Authors@R": "c(person(\"Carson\", \"Sievert\", role = c(\"aut\", \"cre\"),\n    email = \"cpsievert1@gmail.com\", comment = c(ORCID = \"0000-0002-4958-2844\")),\n    person(\"Chris\", \"Parmer\", role = \"aut\",\n    email = \"chris@plot.ly\"),\n    person(\"Toby\", \"Hocking\", role = \"aut\",\n    email = \"tdhock5@gmail.com\"),\n    person(\"Scott\", \"Chamberlain\", role = \"aut\",\n    email = \"myrmecocystus@gmail.com\"),\n    person(\"Karthik\", \"Ram\", role = \"aut\",\n    email = \"karthik.ram@gmail.com\"),\n    person(\"Marianne\", \"Corvellec\", role = \"aut\",\n    email = \"marianne.corvellec@igdore.org\", comment = c(ORCID = \"0000-0002-1994-3581\")),\n    person(\"Pedro\", \"Despouy\", role = \"aut\",\n    email = \"pedro@plot.ly\"),\n    person(\"Salim\", \"Brüggemann\", role = \"ctb\",\n    email = \"salim-b@pm.me\", comment = c(ORCID = \"0000-0002-5329-5987\")),\n    person(\"Plotly Technologies Inc.\", role = \"cph\"))",
         "License": "MIT + file LICENSE",
         "Description": "Create interactive web graphics from 'ggplot2' graphs and/or a custom interface to the (MIT-licensed) JavaScript library 'plotly.js' inspired by the grammar of graphics.",
         "URL": "https://plotly-r.com, https://github.com/plotly/plotly.R,\nhttps://plotly.com/r/",
         "BugReports": "https://github.com/plotly/plotly.R/issues",
         "Depends": "R (>= 3.5.0), ggplot2 (>= 3.0.0)",
-        "Imports": "tools, scales, httr (>= 1.3.0), jsonlite (>= 1.6), magrittr,\ndigest, viridisLite, base64enc, htmltools (>= 0.3.6),\nhtmlwidgets (>= 1.5.2.9001), tidyr (>= 1.0.0), RColorBrewer,\ndplyr, vctrs, tibble, lazyeval (>= 0.2.0), rlang (>= 1.0.0),\ncrosstalk, purrr, data.table, promises",
+        "Imports": "tools, scales, httr (>= 1.3.0), jsonlite (>= 1.6), magrittr,\ndigest, viridisLite, base64enc, htmltools (>= 0.3.6),\nhtmlwidgets (>= 1.5.2.9001), tidyr (>= 1.0.0), RColorBrewer,\ndplyr, vctrs, tibble, rlang (>= 1.0.0), crosstalk, purrr,\ndata.table, promises",
         "Suggests": "MASS, maps, hexbin, ggthemes, GGally, ggalluvial, testthat,\nknitr, shiny (>= 1.1.0), shinytest2, curl, rmarkdown, Cairo,\nbroom, webshot, listviewer, dendextend, sf, png, IRdisplay,\nprocessx, plotlyGeoAssets, forcats, withr, palmerpenguins,\nrversions, reticulate, rsvg, ggridges",
         "LazyData": "true",
         "RoxygenNote": "7.3.3",
         "Encoding": "UTF-8",
         "Config/Needs/check": "tidyverse/ggplot2, ggobi/GGally, rcmdcheck,\ndevtools, reshape2, s2",
         "NeedsCompilation": "no",
-        "Packaged": "2026-01-24 00:53:27 UTC; cpsievert",
+        "Packaged": "2026-07-21 23:17:16 UTC; cpsievert",
         "Author": "Carson Sievert [aut, cre] (ORCID:\n    <https://orcid.org/0000-0002-4958-2844>),\n  Chris Parmer [aut],\n  Toby Hocking [aut],\n  Scott Chamberlain [aut],\n  Karthik Ram [aut],\n  Marianne Corvellec [aut] (ORCID:\n    <https://orcid.org/0000-0002-1994-3581>),\n  Pedro Despouy [aut],\n  Salim Brüggemann [ctb] (ORCID: <https://orcid.org/0000-0002-5329-5987>),\n  Plotly Technologies Inc. [cph]",
         "Maintainer": "Carson Sievert <cpsievert1@gmail.com>",
         "Repository": "RSPM",
-        "Date/Publication": "2026-01-24 07:50:02 UTC",
-        "Built": "R 4.6.0; ; 2026-04-24 03:50:41 UTC; unix",
+        "Date/Publication": "2026-07-22 06:10:02 UTC",
+        "Built": "R 4.6.0; ; 2026-07-23 16:26:35 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "plotly",
         "RemoteRef": "plotly",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "4.12.0"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "4.12.1"
       }
     },
     "praise": {
@@ -4402,7 +4407,7 @@
       "checksum": "0a66880f8cca813f0e034df1b16c0719"
     },
     "inst/extdata/activities.csv": {
-      "checksum": "283496fa05e683677f4705641716632b"
+      "checksum": "64b85071671d73b1109d11098faee20f"
     },
     "inst/golem-config.yml": {
       "checksum": "ba5c39d13ae79400bb0a7d8175b309c5"
