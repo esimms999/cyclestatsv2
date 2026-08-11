@@ -1,8 +1,8 @@
 default:
   golem_name: cyclestatsv2
-  golem_version: 2.01
+  golem_version: 2.02
   app_prod: no
 production:
   golem_name: cyclestatsv2
-  golem_version: 2.01
+  golem_version: 2.02
   app_prod: yes

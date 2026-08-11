@@ -9,4 +9,4 @@
 
 ![](www/cyclestats_QR.png)
 
-V2.01
+V2.02

@@ -133,7 +133,7 @@ docker build -t esimms999/cyclestatsv2:latest .
 To tag a specific version alongside `latest`:
 
 ```{bash}
-docker build -t esimms999/cyclestatsv2:latest -t esimms999/cyclestatsv2:2.00 .
+docker build -t esimms999/cyclestatsv2:latest -t esimms999/cyclestatsv2:2.02 .
 ```
 
 ### Push to Docker Hub
@@ -148,7 +148,7 @@ docker push esimms999/cyclestatsv2:latest
 If you also tagged a version:
 
 ```{bash}
-docker push esimms999/cyclestatsv2:2.00
+docker push esimms999/cyclestatsv2:2.02
 ```
 
 ### Run a container
