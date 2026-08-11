@@ -43,9 +43,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "DT",
         "RemoteRef": "DT",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "0.34.0"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "0.34.0"
       }
     },
     "R.cache": {
@@ -74,9 +73,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "R.cache",
         "RemoteRef": "R.cache",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "0.17.0"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "0.17.0"
       }
     },
     "R.methodsS3": {
@@ -106,9 +104,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "R.methodsS3",
         "RemoteRef": "R.methodsS3",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "1.8.2"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "1.8.2"
       }
     },
     "R.oo": {
@@ -138,9 +135,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "R.oo",
         "RemoteRef": "R.oo",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "1.27.1"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "1.27.1"
       }
     },
     "R.utils": {
@@ -170,9 +166,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "R.utils",
         "RemoteRef": "R.utils",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "2.13.0"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "2.13.0"
       }
     },
     "R6": {
@@ -892,9 +887,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "crosstalk",
         "RemoteRef": "crosstalk",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "1.2.2"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "1.2.2"
       }
     },
     "curl": {
@@ -1044,9 +1038,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "diffobj",
         "RemoteRef": "diffobj",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "0.3.8"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "0.3.8"
       }
     },
     "digest": {
@@ -2049,9 +2042,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "lazyeval",
         "RemoteRef": "lazyeval",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "0.2.3"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "0.2.3"
       }
     },
     "lifecycle": {
@@ -2117,9 +2109,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "lintr",
         "RemoteRef": "lintr",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "3.4.0"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "3.4.0"
       }
     },
     "litedown": {
@@ -2635,8 +2626,9 @@
         "RemoteType": "standard",
         "RemotePkgRef": "plotly",
         "RemoteRef": "plotly",
-        "RemoteRepos": "https://p3m.dev/cran/latest",
-        "RemoteSha.Version": "4.12.1"
+        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
+        "RemoteSha": "4.12.1"
       }
     },
     "praise": {
@@ -3089,9 +3081,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "rex",
         "RemoteRef": "rex",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "1.2.2"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "1.2.2"
       }
     },
     "rlang": {
@@ -3623,9 +3614,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "styler",
         "RemoteRef": "styler",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "1.11.0"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "1.11.0"
       }
     },
     "sys": {
@@ -4281,9 +4271,8 @@
         "RemoteType": "standard",
         "RemotePkgRef": "xmlparsedata",
         "RemoteRef": "xmlparsedata",
-        "RemoteRepos": "https://p3m.dev/cran/__linux__/noble/latest",
-        "RemotePkgPlatform": "x86_64-pc-linux-gnu-ubuntu-24.04",
-        "RemoteSha": "1.0.5"
+        "RemoteRepos": "https://p3m.dev/cran/latest",
+        "RemoteSha.Version": "1.0.5"
       }
     },
     "xopen": {
@@ -4424,7 +4413,7 @@
       "checksum": "acec8871b1ab6910c899abbd25c9a161"
     },
     ".Rbuildignore": {
-      "checksum": "ba3d80b54ebd7bf3443a0844daf425c6"
+      "checksum": "888ae11599e5bd2522587f8d342b568a"
     },
     ".Rprofile": {
       "checksum": "e8a50d76ab13b9f5f41c119c1eb4766e"
