@@ -36,4 +36,4 @@ Config/golem_name: cyclestatsv2
 Config/golem_version_dev: 2.01
 Language: en-US
 URL: https://esimms999.github.io/cyclestatsv2/
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
